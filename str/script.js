@@ -56,16 +56,18 @@ window.onload = () => {
 
 
 
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
-  var audio = document.getElementById("background-music");
-  audio.play().catch(function(error) {
-    console.log("Ошибка воспроизведения: ", error);
+    var audio = document.getElementById("background-music");
+    var button = document.getElementById("toggle-music");
+  
+    button.addEventListener("click", function() {
+      if (audio.paused) {
+        audio.play();
+        button.textContent = "⏸︎";
+      } else {
+        audio.pause();
+        button.textContent = "▶";
+      }
+    });
   });
-});
-
+  

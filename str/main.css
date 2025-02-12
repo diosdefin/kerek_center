@@ -41,3 +41,19 @@
 }
 
 #audio { display: none; }
+
+button{
+position: absolute;
+border-radius: 30px;
+background:linear-gradient(to right bottom , #931c73, #159b94);
+width: 130px;
+height: 130px;
+font-size: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 10px;
+opacity: 0.8;
+background-size: var(--background-size);
+animation: var(--animation);
+}
