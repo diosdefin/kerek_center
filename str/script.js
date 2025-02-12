@@ -51,3 +51,21 @@ function changeText() {
 window.onload = () => {
     changeText();
 };
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("background-music");
+  audio.play().catch(function(error) {
+    console.log("Ошибка воспроизведения: ", error);
+  });
+});
+

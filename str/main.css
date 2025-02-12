@@ -10,8 +10,13 @@
 
 .h1 {
     position: absolute;
-    font-size: 24px;
+    font-size: 30px;
     opacity: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    opacity: 0.8;
+    text-shadow: 4px 4px 10px rgb(255, 226, 59);
+    color: rgb(255, 247, 171);
     transition: opacity 1s ease-in-out;
     margin-top: -280px;
     margin-right: -600px;
@@ -34,3 +39,5 @@
         color: #2E3D48;
     }
 }
+
+#audio { display: none; }
