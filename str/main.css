@@ -1,0 +1,36 @@
+@import url('styles.css');
+
+.gif{
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+.h1 {
+    position: absolute;
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    margin-top: -280px;
+    margin-right: -600px;
+}
+.hidden {
+    opacity: 0;
+}
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 24px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #2E3D48;
+    }
+}
